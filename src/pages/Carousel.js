@@ -27,13 +27,13 @@ const items = [
     link: '/books'
   },
   {
-    src: '/images/IMG_2039.jpg',
+    src: '/images/example1.jpg',
     altText: '',
-    caption: 'Hats',
-    link: '/hats'
+    caption: 'Headware',
+    link: '/headware'
   },
   {
-    src: '/images/IMG_2039.jpg',
+    src: '/images/example3.jpg',
     altText: '',
     caption: 'Heavenly',
     link: '/heavenly'

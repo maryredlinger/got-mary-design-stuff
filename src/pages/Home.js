@@ -1,12 +1,5 @@
 import React from 'react'
 import Carousel from './Carousel.js';
-import Apparel from './Apparel.js'
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
 
 function Home() {
   const items = [
@@ -29,13 +22,13 @@ function Home() {
       link: '/books'
     },
     {
-      src: '/images/IMG_2039.jpg',
+      src: '/images/example1.jpg',
       altText: '',
-      name: 'Hats',
-      link: '/hats'
+      name: 'Headware',
+      link: '/headware'
     },
     {
-      src: '/images/IMG_2039.jpg',
+      src: '/images/example3.jpg',
       altText: '',
       name: 'Heavenly',
       link: '/heavenly'
@@ -46,7 +39,7 @@ function Home() {
     return(
       
       <div className="btn card border-primary mb-3" style={{height: '300px', width: '400px'}}>
-        <div className="card-header">
+        <div key={item.name} className="card-header">
         <a href={item.link} type="button" class="btn btn-outline-primary  btn-block">{item.name}</a>
         </div>
         <div className="card-body">
